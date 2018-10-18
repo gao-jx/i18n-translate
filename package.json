@@ -1,5 +1,5 @@
 {
-  "name": "i18n-translate",
+  "name": "@gao-jx/i18n-translate",
   "version": "1.0.0",
   "description": "translate ",
   "main": "index.js",
