@@ -1,6 +1,6 @@
 {
-  "name": "@gao-jx/i18n-translate",
-  "version": "1.0.0",
+  "name": "@gjx/i18n-translate",
+  "version": "1.0.1",
   "description": "translate ",
   "main": "index.js",
   "scripts": {
