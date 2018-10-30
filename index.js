@@ -35,6 +35,7 @@ const uploadData = async (postData) => {
   })
 }
 module.exports = async function (content) {
+  // find index.yaml
   if (this.resource.indexOf('index.yaml') > -1) {
     try {
       const jsonData = content.replace('module.exports = ', '')
