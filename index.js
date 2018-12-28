@@ -38,8 +38,9 @@ module.exports = async function (content) {
   // find index.yaml
   if (this.resource.indexOf('index.yaml') > -1) {
     try {
+      const regSemicolon = /[\n.]*;$/g
       const jsonData = content.replace('module.exports = ', '')
-        .replace(';', '')
+        .replace(regSemicolon, '')
       const zh_cn = JSON.stringify(JSON.parse(jsonData).zh)
       var postData = qs.stringify({
         'token': token,
