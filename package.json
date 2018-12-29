@@ -1,6 +1,6 @@
 {
   "name": "@tigerbrokers/i18n-translate",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "translate ",
   "main": "index.js",
   "scripts": {
