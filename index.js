@@ -11,7 +11,7 @@ module.exports = async function (content) {
       const zh_cn = JSON.stringify(JSON.parse(jsonData).zh)
       const i18nData = {
         zh: JSON.parse(jsonData).zh,
-        tw: instance.convertSync(zh_cn)
+        tw: JSON.parse(instance.convertSync(zh_cn))
       }
       return `module.exports = ${JSON.stringify(i18nData)}`
     } catch (err) {
