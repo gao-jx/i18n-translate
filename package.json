@@ -1,6 +1,6 @@
 {
   "name": "@tigerbrokers/i18n-translate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "translate ",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gao-jx/i18n-translate/issues"
   },
-  "homepage": "https://github.com/gao-jx/i18n-translate#readme"
+  "homepage": "https://github.com/gao-jx/i18n-translate#readme",
+  "dependencies": {
+    "opencc": "^1.0.5"
+  }
 }
