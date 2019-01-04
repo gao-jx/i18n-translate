@@ -27,6 +27,9 @@ npm install @tigerbrokers/i18n-translate
 .end()
 .use('i18n-translate')
 .loader('@tigerbrokers/i18n-translate')
+.option({
+  type: 'i18n'
+})
 .end()
 
 ```
