@@ -2,12 +2,6 @@
 # yarn lockfile v1
 
 
-nan@^2.5.1:
-  version "2.12.1"
-  resolved "http://r.npm.tigerfintech.com/nan/download/nan-2.12.1.tgz#7b1aa193e9aa86057e3c7bbd0ac448e770925552"
-
-opencc@^1.0.5:
-  version "1.0.5"
-  resolved "http://r.npm.tigerfintech.com/opencc/download/opencc-1.0.5.tgz#53a928ac29dc3557a1b1e058d369b423673ab7e5"
-  dependencies:
-    nan "^2.5.1"
+node-opencc@^2.0.1:
+  version "2.0.1"
+  resolved "http://r.npm.tigerfintech.com/node-opencc/download/node-opencc-2.0.1.tgz#8d53ab05907922ab632615886f24b4aca7567f85"

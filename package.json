@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/gao-jx/i18n-translate#readme",
   "dependencies": {
-    "opencc": "^1.0.5"
+    "node-opencc": "^2.0.1"
   }
 }
