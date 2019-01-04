@@ -1,5 +1,5 @@
 # 介紹
-使用[OpenCC](https://github.com/byvoid/opencc)作为翻译的数据库，支持简体转繁体
+使用[node-openCC](https://github.com/compulim/node-opencc)作为翻译的数据库，支持简体转繁体
 
 # 使用
 ```
