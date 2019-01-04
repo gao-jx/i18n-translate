@@ -11,7 +11,6 @@ module.exports = function (content) {
         zh,
         tw: JSON.parse(tw)
       }
-      console.info(i18nData)
       return JSON.stringify(i18nData)
     } catch (err) {
       return content
