@@ -5,11 +5,14 @@ module.exports = function (content) {
   const userOptions = utils.getOptions(this)
   if (userOptions && userOptions.type === 'i18n') {
     try {
-      const zh = JSON.parse(content).zh
+      const {zh, en} = JSON.parse(content)
       const tw = opencc.simplifiedToTraditional(JSON.stringify(zh)) 
       const i18nData = {
         zh,
         tw: JSON.parse(tw)
+      }
+      if (en) {
+        i18nData.en = en
       }
       return JSON.stringify(i18nData)
     } catch (err) {
@@ -22,11 +25,14 @@ module.exports = function (content) {
       const regSemicolon = /[\n.]*;$/g
       const jsonData = content.replace('module.exports = ', '')
         .replace(regSemicolon, '')
-      const zh_cn = JSON.stringify(JSON.parse(jsonData).zh)
-      const tw = opencc.simplifiedToTraditional(zh_cn)
+      const {zh, en} = JSON.parse(jsonData)
+      const tw = opencc.simplifiedToTraditional(JSON.stringify(zh))
       const i18nData = {
-        zh: JSON.parse(jsonData).zh,
+        zh,
         tw: JSON.parse(tw)
+      }
+      if (en) {
+        i18nData.en = en
       }
       return `module.exports = ${JSON.stringify(i18nData)}`
     } catch (err) {
